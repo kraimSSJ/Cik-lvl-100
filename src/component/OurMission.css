@@ -1,0 +1,106 @@
+.mission-section {
+    width: 100%;
+    padding: 60px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .mission-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+  }
+  
+  .mission-text-container {
+    background-color: #c19a6b;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px;
+  }
+  
+  .mission-title {
+    color: black;
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+  }
+  
+  .mission-text {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .mission-image {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .mission-content {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+    
+    .mission-text-container {
+      max-width: 100%;
+    }
+    
+    .mission-image {
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mission-section {
+      padding: 40px 20px;
+    }
+    
+    .mission-text-container {
+      padding: 30px;
+    }
+    
+    .mission-title {
+      font-size: 2rem;
+    }
+    
+    .mission-text {
+      font-size: 1rem;
+    }
+    
+    .mission-image {
+      max-width: 350px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mission-section {
+      padding: 30px 15px;
+    }
+    
+    .mission-text-container {
+      padding: 20px;
+    }
+    
+    .mission-title {
+      font-size: 1.8rem;
+    margin-bottom: 15px;
+    }
+    
+    .mission-image {
+      max-width: 280px;
+    }
+  }

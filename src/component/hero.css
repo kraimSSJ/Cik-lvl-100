@@ -1,0 +1,130 @@
+/* Base Styles */
+.hero-container {
+    background: #0A2342;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .hero-logo {
+    width: 120px;
+    height: auto;
+  }
+  
+  .hero-nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hero-nav a {
+    color: white;
+    margin-top: 0px;
+    font-family: 'Irish Grover', cursive;
+    text-decoration: none;
+    font-size: 28px;
+    transition: color 0.3s;
+  }
+  
+  .hero-nav a:hover {
+    color: #c19a7b;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex: 1;
+    
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+  }
+  
+  .hero-text {
+    flex: 1;
+    font-size: 40px;
+  }
+  
+  .hero-title {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+    color: white;
+  }
+  
+  .hero-subtitle {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+    color: #c19a7b;
+  }
+  
+  .hero-divider {
+    width: 3px;
+    height: 300px;
+    background-color: #c19a7b;
+    margin: 0px 100%;
+  }
+  
+  .hero-description {
+    flex: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hero-header {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .hero-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-divider {
+      display: none;
+    }
+  
+    .hero-title, .hero-subtitle {
+      font-size: 2rem;
+    }
+  
+    .hero-description {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .hero-nav a {
+      font-size: 16px;
+    }
+  
+    .hero-title, .hero-subtitle {
+      font-size: 1.8rem;
+    }
+  }

@@ -1,0 +1,98 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0A2342;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .not-found-content {
+    max-width: 600px;
+  }
+  
+  .not-found-title {
+    font-size: 8rem;
+    margin: 0;
+    color: #c19a6b;
+    font-family: 'Cinzel Decorative', serif;
+  }
+  
+  .not-found-subtitle {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .not-found-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .not-found-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #c19a6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #c19a6b;
+  }
+  
+  .not-found-button:hover {
+    background-color: transparent;
+    color: #c19a6b;
+  }
+  
+  .not-found-illustration {
+    margin: 30px 0;
+    height: 150px;
+    position: relative;
+  }
+  
+  .broken-chain {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .broken-chain::before,
+  .broken-chain::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #c19a6b;
+    border-radius: 50%;
+  }
+  
+  .broken-chain::before {
+    left: 0;
+    top: 0;
+  }
+  
+  .broken-chain::after {
+    right: 0;
+    top: 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .not-found-title {
+      font-size: 6rem;
+    }
+    
+    .not-found-subtitle {
+      font-size: 1.5rem;
+    }
+    
+    .not-found-text {
+      font-size: 1rem;
+    }
+  }

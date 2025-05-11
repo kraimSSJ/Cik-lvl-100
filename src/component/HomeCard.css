@@ -1,0 +1,140 @@
+.cards-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card-wrapper.left {
+  flex-direction: row;
+}
+
+.card-wrapper.right {
+  flex-direction: row-reverse;
+}
+
+.home-card {
+  background-image: url("/public/ChatGPT\ Image\ May\ 8\,\ 2025\,\ 04_32_03\ PM.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 250px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  margin-bottom: 15px;
+}
+
+.card-image {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.home-card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.home-card-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.home-card-link:hover {
+  text-decoration: underline;
+  color: #f0f0f0;
+}
+
+.text-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.card-text {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .card-wrapper {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  
+  .text-container {
+    order: -1;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    gap: 30px;
+    padding: 15px;
+  }
+  
+  .home-card {
+    min-width: 200px;
+    padding: 20px;
+  }
+  
+  .card-image {
+    width: 70px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container {
+    gap: 25px;
+  }
+  
+  .home-card {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+  }
+  
+  .home-card-link {
+    font-size: 0.9rem;
+  }
+}
