@@ -7,37 +7,31 @@ body {
   overflow-y: hidden;
 }
 
-
 #img, #img1 {
   transition: transform 0.8s ease-in-out;
-  position: relative;
+  position: fixed;
   top: 0;
   height: 100vh;
   width: 50vw;
   object-fit: cover;
   z-index: 2;
+   animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
 }
-
-/* Left image */
 #img {
   left:0;
 }
-
-/* Right image */
 #img1 {
   right:0;
 }
-
-/* Slide animations */
 .slide-left {
   transform: translateX(-100%);
 }
 .slide-right {
   transform: translateX(100%);
 }
-
-/* Center button */
 #hr {
+    opacity: 1;
   position: fixed;
   z-index: 3;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -52,7 +46,7 @@ body {
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease; /* Added for smooth animation */
+  transition: transform 0.3s ease;
 }
 
 #hr:hover { 
@@ -62,7 +56,7 @@ body {
 
 }
 
-/* Hero content fade-in */
+
 #theSite {
   opacity: 0;
   animation: fadeIn 0.2s ease-in forwards;
